@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Grafico de stats de pokemon desde PokeApi">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/00b0936552.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Pokemon Info | PokeAPI</title>
+</head>
+<body>
+    <div class="form-card-container">
+        <div class="form-sugerencias">
+            <form>
+                <input id="input-pokemon"
+                 type="text" 
+                 value=""
+                 placeholder="Write Pokemon name..." 
+                 autocomplete="off"
+                >
+            </form>
+            <ul class="lista-sugerencias">
+                <!-- li item -->
+            </ul>
+        </div>
+        <div id="poke-card" class="card">
+            <div class="card-header">
+                <h2 class="pokeName">Pikachu</h2>
+                <h4 class="pokeHP">35 HP
+                </h4>
+            </div>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg"
+             alt="pokemon photo" 
+             class="card-img"
+            >
+            <ul class="lista-habilidades">
+                <li>Static</li>
+                <li>Lightning-Rod</li>
+            </ul>
+            <div class="tipos">
+                <div class="tipo" style="background-color:var(--electric);">Electric</div>
+            </div>
+        </div>
+        <div class="chart">
+            <h2 class="title">Stats Graph</h2>
+            <canvas id="stats-chart"></canvas>
+        </div>
+    </div>
+    <footer>
+        <div class="contacto">
+            <a href="https://www.linkedin.com/in/crist%C3%B3bal-villanueva-b83929192/"><i class="fab fa-linkedin" id="linkein-icon"></i></a>
+            <a href="https://github.com/crvillanueva"><i class="fab fa-github" id="github-icon"></i></a>
+            <a><i class="fas fa-envelope"></i><span>cristobaljvp@gmail.com</span></a>
+        </div>
+        <div>
+            Powered by <a href="https://pokeapi.co/">PokeAPI</a>
+        </div>
+    </footer>
+</body>
+</html>
